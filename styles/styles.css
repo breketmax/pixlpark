@@ -1,0 +1,513 @@
+:root {
+  --primary: #00c8c8;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 48px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h5 {
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  padding: 0 21.46%;
+}
+
+body .hidden {
+  display: none;
+}
+
+.top-bar {
+  background-color: #333333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+}
+
+.top-bar-content {
+  display: grid;
+  gap: 35px;
+  grid-template-columns: 1fr auto auto auto;
+}
+
+.top-bar p,
+.top-bar a {
+  padding: 15px 0;
+  color: #999999;
+  width: fit-content;
+}
+
+.currency-list {
+  cursor: pointer;
+}
+
+.cart-block {
+  color: #fff;
+  background-color: var(--primary);
+  padding: 15px 25px;
+  margin-left: 45px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cart-block i:first-child {
+  margin-right: 10px;
+}
+
+.nav {
+  font-family: "Montserrat", sans-serif;
+  color: #222222;
+  text-transform: uppercase;
+  padding: 35px 135px 45px 135px;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 115px;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.nav .logo {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.nav-bar {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 55px;
+}
+
+.nav-bar .nav-item {
+  font-size: 13px;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-bar .nav-item:hover {
+  color: var(--primary);
+}
+
+.search-block {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.search-block .search {
+  border-bottom: 1px solid #e7e7e7;
+  border-right: 1px solid #e7e7e7;
+  border-top: 1px solid #e7e7e7;
+  padding: 6.5px 10px;
+  cursor: pointer;
+  color: #989899;
+}
+
+.search-input {
+  padding: 8px 10px;
+  border: none;
+  border-bottom: 1px solid #e7e7e7;
+  border-left: 1px solid #e7e7e7;
+  border-top: 1px solid #e7e7e7;
+  font-size: 13px;
+  outline: none;
+  color: #222222;
+  font-family: "Montserrat", sans-serif;
+}
+
+.search-input::placeholder {
+  color: #989898;
+  font-family: "Montserrat", sans-serif;
+  font-weight: light;
+  font-size: 13px;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 70px;
+  row-gap: 55px;
+  min-width: 460px;
+  padding: 60px 30px 30px 30px;
+  right: 0;
+  min-width: 400px;
+  cursor: auto;
+  z-index: 2;
+}
+
+.dropdown ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.dropdown .title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #575153;
+}
+
+.dropdown li {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  white-space: nowrap;
+  text-transform: none;
+  color: #727272;
+}
+
+.dropdown li:hover {
+  color: var(--primary);
+}
+
+.dropdown .sale {
+  color: #fff;
+  font-size: 36px;
+  grid-column: 1/-1;
+  background-color: #333333;
+  padding: 60px 50px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.intro {
+  text-transform: uppercase;
+  padding: 170px 0;
+  position: relative;
+  background: url("/img/background.jpg");
+  z-index: 1;
+  background-size: cover;
+  background-position-y: 20%;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.intro::after {
+  content: "";
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.75);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.intro::before {
+  content: "A  V  E";
+  font-size: 450px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 620px;
+  z-index: -2;
+  color: rgba(248, 248, 248, 0.22);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.intro h1 {
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+.intro h2 {
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.cities-cards-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  padding: 60px 0;
+}
+
+.city-card {
+  display: grid;
+  align-content: space-between;
+  row-gap: 30px;
+}
+
+.card-text {
+  display: grid;
+  row-gap: 10px;
+}
+
+.cities-cards-content h3 {
+  color: #575153;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 22px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.cities-cards-content h5 {
+  color: #727272;
+  text-transform: uppercase;
+
+  font-weight: 600;
+}
+
+.cities-cards-content .city-description {
+  color: #8e8c8c;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  line-height: 22px;
+}
+
+.cities-cards-content .details {
+  padding: 20px 35px;
+  border: 2px solid #737373;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  min-height: 60px;
+  color: #454647;
+  letter-spacing: 3px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.cities-cards-content .details:hover {
+  background-color: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+.cities-info {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 125px;
+}
+
+.city-map {
+  background-image: url("/img/map.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.city-map i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--primary);
+}
+
+.city-info {
+  background-color: #f8f8f8;
+  padding: 40px 80px 80px 40px;
+  display: grid;
+  row-gap: 15px;
+}
+
+.city-info h3 {
+  color: #575153;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.city-info h5 {
+  font-weight: 400;
+  color: #727272;
+}
+
+.city-info h4 {
+  color: #8e8c8c;
+  font-weight: normal;
+}
+
+.city-info h4:nth-of-type(1) {
+  font-weight: 600;
+}
+
+.city-info h4:nth-of-type(2) {
+  margin-top: 10px;
+}
+
+.city-info p {
+  font-weight: 400;
+  color: #8e8c8c;
+  font-family: "Roboto", sans-serif;
+
+  line-height: 22px;
+}
+
+.city-info h4 i {
+  margin-right: 15px;
+}
+
+.social-networks {
+  margin-top: 45px;
+}
+
+.social-networks i {
+  color: #f8f8f8;
+  background-color: #727272;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border-radius: 50%;
+}
+
+.social-networks i::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.footer-menu {
+  background-color: #f8f8f8;
+  padding: 60px 0;
+}
+
+.footer-menu h5 {
+  font-weight: 600;
+  color: #575153;
+  text-transform: uppercase;
+}
+
+.footer-menu h4 a {
+  font-weight: 400;
+  color: #727272;
+  letter-spacing: -1px;
+  line-height: 20px;
+}
+
+.footer-menu h4 a:hover {
+  color: var(--primary);
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.menu ul {
+  padding: 0;
+  margin: 30px 0 0 0;
+  list-style: none;
+}
+
+.menu li {
+  margin-top: 10px;
+}
+
+.banners {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  margin-top: 60px;
+}
+
+.award-banner {
+  background-color: #333333;
+  padding: 65px 55px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.networks-banner {
+  padding: 80px 55px;
+  background-color: var(--primary);
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-content: center;
+  justify-content: center;
+  column-gap: 60px;
+}
+
+.networks-banner i {
+  color: #fff;
+}
+
+.copyright {
+  background-color: #333333;
+  padding: 15px 0;
+}
+
+.copyright-content {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+
+  column-gap: 35px;
+}
+
+.copyright h5 {
+  color: #777777;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.copyright h5:first-child {
+  color: #999999;
+  font-weight: 600;
+}
+
+.copyright a {
+  color: inherit;
+}
